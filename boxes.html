@@ -1,0 +1,36 @@
+<!-- SUMMARY -->
+<!-- 
+    everything is a BOX
+    boxes can be inline or block-level
+    boxes have content, padding, border and margins
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Boxes Are Easy!</title>
+    <link rel='stylesheet' href='box-styles.css'/>
+  </head>
+  <body>
+    <h1>Headings Are Block Elements</h1>
+
+    <p>Paragraphs are blocks, too. <em>However</em>, &lt;em&gt; and &lt;strong&gt;
+       elements are not. They are <strong>inline</strong> elements.</p>
+
+       <!-- PREVENTS MARGIN FROM COLLAPSING -->
+       <!-- FLEXBOX doesn't have collapsing margins -->
+       <div style="padding-top: 1px"></div>
+       
+    <!-- block box elements affect vertical spacing but inline elemenents don't -->
+    <p>Block elements define the flow of the HTML document, while inline elements
+       do not.</p>
+
+    <!-- DIV is used for easy selection of BLOCK elements
+         while SPAN is used for the selection of inline elements -->
+    <div class="button">Button</div>
+       
+  </body>
+</html>

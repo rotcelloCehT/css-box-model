@@ -1,0 +1,76 @@
+/* UNIVERSLA CSS SELECTOR IS: --->     *          */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    text-align:center;
+}
+
+h1, p {
+    background-color: #dde0e3;
+    padding: 50px;
+}
+
+h1 {
+    border: 1px solid #5d6063;
+    /* BORDER IS... valuable for debugging to see how box is rendering */
+}
+
+p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* SHORT HAND NOTATION */
+    /* PADDING: VERTICAL HORIZONTAL */
+    /* PADDING: TOP RIGHT BOTTOM LEFT */
+    padding: 20px 0 20px 0;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    /* PADDING VS MARGIN */
+    /* 
+    PADDING: is included in the click area and has a border.
+        padding doesn't collapse vertically.
+
+    MARGIN: is not inluded in the click area and is transparent.
+        also vertically collapses meaning that if adding to <li> elements top AND bottom margin, 
+        only the biggest value is taken and the rest collapses.
+    */
+}
+
+em, strong {
+    background-color: #B2D6FF;
+    display: inline;
+    /* sets the element to block type and thus it affects vertical spacing */
+}
+
+strong {
+    /* margin doesn't expand the highlight in blue but padding does */
+    margin: 50px;
+}
+
+.button {
+    color: #FFF;
+    background-color: #5995da;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5d6063;
+    border-radius: 5px;
+    width: 250px;
+    /* box-sizing: content-box(default) or border-box */
+    /* 
+        CONTENT makes the size of div calculated with padding and margin
+        BLOCK makes the size exactly as restricted!!!
+    */
+    box-sizing: border-box;
+    /* margin: vertical horizontal */
+    /* this works because the body is set to text align center */
+    margin: 20px auto; 
+
+}
